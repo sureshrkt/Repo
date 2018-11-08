@@ -22,6 +22,7 @@ public class FaresController {
 
 	@RequestMapping("/get")
 	Fare getFare(@RequestParam(value="flightNumber") String flightNumber, @RequestParam(value="flightDate") String flightDate){
+		System.out.println("This is first commit in GIT")
 		return faresComponent.getFare(flightNumber,flightDate);
 	}
 }
